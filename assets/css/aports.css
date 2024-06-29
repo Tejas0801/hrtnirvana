@@ -2321,7 +2321,7 @@ ul {
   display: flex;
   height: 80px;
   width: 83px;
-  background-color: var(--aports-white);
+  color:#ffffff;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -5437,7 +5437,7 @@ ul {
 }
 
 .counter-one__text {
-  color: #feffff;
+  color: #ad9767;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
