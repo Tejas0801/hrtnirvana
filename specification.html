@@ -45,8 +45,11 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/aports.css" />
     <link rel="stylesheet" href="assets/css/aports-responsive.css" />
-    <script src="contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body class="custom-cursor">
 
     <div class="custom-cursor__cursor"></div>
@@ -62,7 +65,7 @@
     <!-- /.preloader -->
 
 
-    <div class="page-wrapper">
+<div class="page-wrapper">
         <header class="main-header">
             <nav class="main-menu">
                 <div class="main-menu__wrapper">
@@ -123,125 +126,258 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/slider1.jpg)">
+            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/slider5.jpg)">
             </div>
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li><span>/</span></li>
-                        <li>Contact</li>
+                        <li>Specification</li>
                     </ul>
-                    <h2>Contact us</h2>
+                    <h2></h2>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
-
-        <!--Contact Two Start-->
-        <section class="contact-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="contact-two__left">
-                            <div class="contact-two__img">
-                                <img src="assets/images/backgrounds/ENTRY GATE VIEW.jpg" alt="">
-                            </div>
+        <section class="feature-two">
+          <div class="container">
+              <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          STRUCTURE
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><b>RCC FRAMED : </b>RCC trimed viructure degged for wind & solemic forces.</p>
+                        <p><b>SUPER STRUCTURE : </b></p>
+                        <p>Edernal wells : 6 inches thick solid block work.</p>
+                        <p>Internal walls : 4 inches thick solid block work.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          PLASTERING
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                          <p><b>INTERNAL WALL FINISHES : </b>Cement plastering in CM 1:5 for walls & celling.</p>
+                          <p><b>EXTERNAL WALL FINISHES : </b>2 costs of plastering in CM 1:5/14 Rough/Smooth plaster for all external walls, as per the façade design.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            DOORS
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>MAIN DOOR : </b>Teak wood frame & paneled shutter, polished with iron mangery of reputed make.</p>
+                          <p><b>INTERNAL DOOR : </b>Engineered woed frame with laminate flush shutters of reputed make, fixed with reputed make hardware.</p>
+                          <p><b>FRENCH DOORS : </b>UPVC/Aluminium sliding doors with 5mm toughened gloss of reputed make and provision for fly proof shutter.</p>
+                          <p><b>SHAFT DOORS : </b>Metal doors with louvers.</p>
+                          <p><b>WINDOWS : </b>Siiding UIPVC/ Aluminium Windows with 5mm thick plain glass with provision for mosquito meshshutter.</p>
+                          <p><b>VENTILATORS : </b>UPVC/Aluminurn for toilets.</p>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="contact-two__right">
-                            <div class="section-title text-left">
-                                <span class="section-title__tagline">contact with us</span>
-                                <h2 class="section-title__title">Get in touch now</h2>
-                            </div>
-                            <p class="contact-two__text-1">feel  free to contact us anytime</p>
-                            <ul class="list-unstyled contact-two__list">
-                                <li>
-                                    <div class="icon">
-                                        <i class="icon-telephone"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Have any question?</p>
-                                        <h4> <span>Free</span> <a href="tel:230009850">999999999</a></h4>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="icon-email"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Write email</p>
-                                        <h4><a href="mailto:needhelp@company.com">needhelp@hrt.com</a></h4>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="icon-pin"></i>
-                                    </div>
-                                    <div class="content">
-                                        <p>Visit anytime</p>
-                                        <h4>Vijayawada</h4>
-                                    </div>
-                                </li>
-                            </ul>
+                    <div class="card">
+                      <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            PAINTING
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>INTERNAL : </b>Smooth putty finish with 2 coola of premiumn scrylic emulsion paint of reputed make for all internal walls and calling.</p>
+                          <p><b>EXTERIOR : </b>Combination of textured and non-tentured urfaces with two costs of exterior weather-proof acrylic emulsion paint.</p>
                         </div>
+                      </div>
                     </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              DADOING
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>KITCHEN : </b>Glazed ceramic tiles for 2it. height dado above counter.</p>
+                          <p><b>TOILETS : </b>Glazed ceramic tiles dado up to false ceiling.</p>
+                          <p><b>UTILITY : </b>Glazed ceramic tile dado up to 3' height.</p>
+                          <p><b>LIFT FASCIA : </b>Granite cladding.</p>
+                          <p><b>KITCHEN PLATFORM : </b>18 - 20mm Thick polished granite slab with 33 sink, chimney/ echaust fan.</p>
+                          <p><b>WASH AREA : </b>Provision for washing machine and wet utensil area.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              FLOORING
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>DRAWING, LIVING, KITCHEN, DINING & ALL BEDROOMS : </b>Premium Vitrified Tiles of Size 600 × 1200mm.</p>
+                          <p><b>BATHROOMS, BALCONY & UTILITY : </b>Anti-Skid Ceramic Tiles of size 600 x 600mm.</p>
+                          <p><b>CORRIDORS : </b>Vitrified bles of size 600 x 1200 with Combination of Granite Strips.</p>
+                          <p><b>STAIRCASE : </b>10mm thick Granite slabs for fooring ond Skirting úpto First Floor and then afterwards Tandur store.</p>
+                          <p><b>BASEMENTS : </b>Vitrified tilas flooring for lift lobbies VDF floring for parking and drive ways.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            RAILING
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>BALCONY : </b>Glass and stainless steel railing as per design.</p>
+                          <p><b>STAIRCASE : </b>5.5 railing as per design.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingEight">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            LIFTS
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>Automatic lifts of reputed make for passengers and one separate lift for goods.</p> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingNine">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            ELECTRICAL SPECIFICATIONS
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>ELECTRICAL POINTS : </b>A/c point in all bed rooms and living room.</p>
+                          <p>Points for Aqua guard, chimney, exhaust, mixer and grinder in Kitchen.</p>
+                          <p>PVC insulated fire retardant copper wires of standard make</p>
+                          <p>Modular electrical switches of reputed make.</p>
+                          <p>Lightening protection system.</p>
+                          <p><b>TV & TELECOM:: </b>Provision for Cable TV / DTH and Telephone in Master bed room and living room.</p>
+                          <p><b>INTERNET : </b>Provision for Wi-Fi system.</p>
+                          <p><b>POWER BACK UP : </b>For all common aminities and 1KW for each flat.</p>
+                          <p><b>SECURITY SYSTEMS : </b>CCTV monitoring.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            PLUMBING & SANITARY
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                        <div class="card-body">
+                          <p><b>WASHBASINS : </b>Counter Top Wash basin with 18-20mm thick Grenite Counter.</p>
+                          <p><b>WC : </b>Wall mounted white color EWC.</p>
+                          <p><b>SHOWER : </b>Single lever Fixtures with Wall mixer cum shower.</p>
+                          <p>All CP Fittings of Reputed make.</p>
+                          <P>Provision for Geysers in all Bathrooms.</P>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingEleven">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            WATER SUPPLY
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>24 Hrs Water Supply.</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingtwelve">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            STP
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>Placed in basement and Treated Water to be reused in Flushing in toilets and Landscaping.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThirteen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            LPG RETICULATION
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>Reticulated gas supply with metering facility.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFourteen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            FIRE FIGHTING & PROTECTION
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>Fire tanks, Automatic Sprinklers in basements, Hose boxes, Fire alarms etc. as per DGFS norms.</p>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- Add more sections as needed -->
                 </div>
-            </div>
-        </section>
-        <!--Contact Two End-->
-
-        <!--Google Map Start-->
-        <!-- <section class="contact-page-google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
-                class="google-map__two" allowfullscreen></iframe>
-
-        </section> -->
-        <!--Google Map End-->
-
-        <!--Contact Three Start-->
-        <section class="contact-three">
-            <div class="container">
-                <div class="contact-three__inner">
-                    <div class="section-title text-center">
-                        <span class="section-title__tagline">write a message</span>
-                        <h2 class="section-title__title">Feel free to write</h2>
-                    </div>
-                    <div class="contact-three__form-box">
-                        <form action="assets/inc/sendemail.php" class="contact-three__form contact-form-validated"
-                            novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="contact-form__input-box">
-                                        <input id="name" type="text" placeholder="Your name" name="name">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="contact-form__input-box">
-                                        <input id="phone" type="email" placeholder="phone" name="email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="contact-form__input-box text-message-box">
-                                        <textarea id="message" name="message" placeholder="Write message"></textarea>
-                                    </div>
-                                    <div class="contact-form__btn-box">
-                                        <button type="submit" onClick="save()" class="thm-btn contact-form__btn">Send a Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Contact Three End-->
-
-   
+          </div>
+      </section>
 
  <!--Site Footer Start-->
  <footer class="site-footer">
@@ -339,7 +475,8 @@
 <!--Site Footer End-->
 
 
-</div><!-- /.page-wrapper -->
+</div>
+<!-- /.page-wrapper -->
 
 
 <div class="mobile-nav__wrapper">
