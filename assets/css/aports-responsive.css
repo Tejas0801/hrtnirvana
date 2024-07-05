@@ -7,6 +7,56 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+/* Overlay for better text readability */
+.neighborhoods-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Dropdown Menu Styling */
+.main-menu__list .dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+.main-menu__list .dropdown:hover ul {
+    display: block;
+}
+
+.main-menu__list .dropdown ul li {
+    padding: 10px 20px;
+}
+
+.main-menu__list .dropdown ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.main-menu__list .dropdown ul li a:hover {
+    color: #007bff;
+}
+
+/* Button Styling */
+.thm-btn.main-menu__btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.thm-btn.main-menu__btn:hover {
+    background-color: #0056b3;
+}
 
 
 
