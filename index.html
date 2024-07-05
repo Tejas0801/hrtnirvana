@@ -355,8 +355,9 @@
 
         <!--Neighborhoods Start-->
         <section class="neighborhoods">
-            <div class="neighborhoods-bg"
-                style="background-image: url(assets/images/backgrounds/neighborhoods-bg.jpg);"></div>
+            <div class="neighborhoods-bg" style="background-image: url(assets/images/backgrounds/neighborhoods-bg.jpg);">
+                <div class="overlay"></div>
+            </div>
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Nearby areas</span>
@@ -366,60 +367,76 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="neighborhoods__left">
                             <div class="neighborhoods__faq">
-                                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                    <div class="accrodion active">
-                                        <div class="accrodion-title">
-                                            <h4>Renowned Schools</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Sarada Educational Institution-1.2km</br>5 min by car</br> 
-                                                   Siddhartha Medical College-4.5km</br>12 min by car</br>
-                                                   Bloomingdale International School-10km</br>20 min by car</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Shopping Centers</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>PVP Shopping Mall-Cinepolis</br>0.8km - 3min by car</br>
-                                                   D-Address Mall</br>0.3km-1 min by car</br>
-                                                   Trendset Mall-Capital Cinemas</br>1.3km-5min by car</br>
-                                                   Eat Street</br>1.4km-5 min by car</p>
-                                            </div><!-- /.inner -->
+                                <div class="accordion" id="neighborhoodsAccordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <i class="fas fa-school"></i> Renowned Schools
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#neighborhoodsAccordion">
+                                            <div class="accordion-body">
+                                                <p>Sarada Educational Institution - 1.2 km, 5 min by car<br>
+                                                    Siddhartha Medical College - 4.5 km, 12 min by car<br>
+                                                    Bloomingdale International School - 10 km, 20 min by car</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Transport connectivity</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Transport connectivity Vijayawada International Airport - 20km - 30 min by car Vijayawada Railway Station - 4.5km - l 2 min by car Pandit Nehru Bus Stop - 3.5km - 12 min by car</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Hospitals</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Prashanth Hospital - 0.2km</br>1 min by car</br>Ramesh Hospitals - 3.31 km</br>10 min by car</br>Andhra Hospital - 2.5km</br>8 min by car</br> Apollo Diagnostic Center - 1km</br>5 min by car</p>
-                                            </div><!-- /.inner -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fas fa-shopping-cart"></i> Shopping Centers
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#neighborhoodsAccordion">
+                                            <div class="accordion-body">
+                                                <p>PVP Shopping Mall-Cinepolis - 0.8 km, 3 min by car<br>
+                                                    D-Address Mall - 0.3 km, 1 min by car<br>
+                                                    Trendset Mall-Capital Cinemas - 1.3 km, 5 min by car<br>
+                                                    Eat Street - 1.4 km, 5 min by car</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="accrodion last-child">
-                                        <div class="accrodion-title">
-                                            <h4>Play grounds</h4>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fas fa-bus"></i> Transport Connectivity
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#neighborhoodsAccordion">
+                                            <div class="accordion-body">
+                                                <p>Vijayawada International Airport - 20 km, 30 min by car<br>
+                                                    Vijayawada Railway Station - 4.5 km, 12 min by car<br>
+                                                    Pandit Nehru Bus Stop - 3.5 km, 12 min by car</p>
+                                            </div>
                                         </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>DV Manor - 0.8km</br>4 min by car</br>Fortune Murali Park - 0.5km</br>3 min by car</p>
-                                            </div><!-- /.inner -->
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                <i class="fas fa-hospital"></i> Hospitals
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#neighborhoodsAccordion">
+                                            <div class="accordion-body">
+                                                <p>Prashanth Hospital - 0.2 km, 1 min by car<br>
+                                                    Ramesh Hospitals - 3.31 km, 10 min by car<br>
+                                                    Andhra Hospital - 2.5 km, 8 min by car<br>
+                                                    Apollo Diagnostic Center - 1 km, 5 min by car</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                <i class="fas fa-futbol"></i> Playgrounds
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#neighborhoodsAccordion">
+                                            <div class="accordion-body">
+                                                <p>DV Manor - 0.8 km, 4 min by car<br>
+                                                    Fortune Murali Park - 0.5 km, 3 min by car</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -432,54 +449,48 @@
                                 <div class="neighborhoods__img">
                                     <img src="assets/images/resources/location.jpg" alt="">
                                 </div>
-                                <div class="neighborhoods__location-1">
-                                    <div class="neighborhoods__map-markar"></div>
-                                    <div class="neighborhoods__popup-box">
-                                        <div class="neighborhoods__popup">
-                                            <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Restauant</h5>
-                                                <p class="neighborhoods__popup-text">
-                                                    gismat</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                <div class="neighborhoods__location" style="position: relative;">
+                                    <div class="neighborhoods__map-marker" style="top: 20%; left: 30%;">
+                                        <div class="neighborhoods__popup-box">
+                                            <div class="neighborhoods__popup">
+                                                <div class="neighborhoods__popup-inner">
+                                                    <h5 class="neighborhoods__popup-title">Restaurant</h5>
+                                                    <p class="neighborhoods__popup-text">Gismat</p>
+                                                    <span class="neighborhoods__popup-km">13.5KM</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="neighborhoods__location-1 neighborhoods__location-2">
-                                    <div class="neighborhoods__map-markar neighborhoods__map-markar-2"></div>
-                                    <div class="neighborhoods__popup-box">
-                                        <div class="neighborhoods__popup">
-                                            <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Central park</h5>
-                                                <p class="neighborhoods__popup-text">
-                                                  NTR park</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                    <div class="neighborhoods__map-marker" style="top: 40%; left: 50%;">
+                                        <div class="neighborhoods__popup-box">
+                                            <div class="neighborhoods__popup">
+                                                <div class="neighborhoods__popup-inner">
+                                                    <h5 class="neighborhoods__popup-title">Central Park</h5>
+                                                    <p class="neighborhoods__popup-text">NTR Park</p>
+                                                    <span class="neighborhoods__popup-km">13.5KM</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="neighborhoods__location-1 neighborhoods__location-3">
-                                    <div class="neighborhoods__map-markar neighborhoods__map-markar-3"></div>
-                                    <div class="neighborhoods__popup-box">
-                                        <div class="neighborhoods__popup">
-                                            <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Shopping center</h5>
-                                                <p class="neighborhoods__popup-text">CMR
-                                                </p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                    <div class="neighborhoods__map-marker" style="top: 60%; left: 70%;">
+                                        <div class="neighborhoods__popup-box">
+                                            <div class="neighborhoods__popup">
+                                                <div class="neighborhoods__popup-inner">
+                                                    <h5 class="neighborhoods__popup-title">Shopping Center</h5>
+                                                    <p class="neighborhoods__popup-text">CMR</p>
+                                                    <span class="neighborhoods__popup-km">13.5KM</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="neighborhoods__location-1 neighborhoods__location-4">
-                                    <div class="neighborhoods__map-markar neighborhoods__map-markar-4"></div>
-                                    <div class="neighborhoods__popup-box">
-                                        <div class="neighborhoods__popup">
-                                            <div class="neighborhoods__popup-inner">
-                                                <h5 class="neighborhoods__popup-title">Hospitals</h5>
-                                                <p class="neighborhoods__popup-text">
-                                                    Yashoda</p>
-                                                <span class="neighborhoods__popup-km">13.5KM</span>
+                                    <div class="neighborhoods__map-marker" style="top: 80%; left: 90%;">
+                                        <div class="neighborhoods__popup-box">
+                                            <div class="neighborhoods__popup">
+                                                <div class="neighborhoods__popup-inner">
+                                                    <h5 class="neighborhoods__popup-title">Hospital</h5>
+                                                    <p class="neighborhoods__popup-text">Yashoda</p>
+                                                    <span class="neighborhoods__popup-km">13.5KM</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -490,6 +501,7 @@
                 </div>
             </div>
         </section>
+        
         <!--Neighborhoods End-->
 
        <!--Site Footer Start-->
