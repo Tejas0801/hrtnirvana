@@ -70,7 +70,7 @@
 
 /* Button Styling */
 .thm-btn.main-slider__btn {
-    background-color: #007bff;
+    background-color:#c79d61;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,7 +79,7 @@
 }
 
 .thm-btn.main-slider__btn:hover {
-    background-color: #0056b3;
+    background-color:#c79d61;
 }
 
 /* Navigation Button Styling */
@@ -105,6 +105,8 @@
     background: #007bff;
     opacity: 1;
 }
+
+
 
 
 
