@@ -42,12 +42,12 @@
 }
 
 .main-menu__list .dropdown ul li a:hover {
-    color: #e5ff00;
+    color: #007bff;
 }
 
 /* Button Styling */
 .thm-btn.main-menu__btn {
-    background-color:#FFD700;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
