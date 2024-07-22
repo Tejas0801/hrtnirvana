@@ -1,3 +1,68 @@
+
+.explore-section-container {
+    padding: 70px 20px;
+    background-image: url('assets/images/backgrounds/slider2.jpg');
+    margin: 50px auto;
+    max-width: 800px;
+    
+}
+.explore-main-heading {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #020202;
+    position: relative;
+    display: inline-block;
+}
+
+.explore-main-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Adjust this value for the desired gap */
+    width: 100%;
+    height: 5px; /* Adjust the thickness of the underline */
+    background-color: #d2b48c; /* Desired underline color */
+}
+.explore-paragraph {
+    color: #7a7a7a;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.explore-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.explore-button {
+    background-color: #d2b48c;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.explore-button:hover {
+    background-color: #363029;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
 .neighborhoods-bg .overlay {
     position: absolute;
     top: 0;
@@ -47,7 +112,7 @@
 
 /* Button Styling */
 .thm-btn.main-menu__btn {
-    background-color: #007bff;
+    background-color:#c79d61;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -55,7 +120,7 @@
 }
 
 .thm-btn.main-menu__btn:hover {
-    background-color: #0056b3;
+    background-color: #c79d61;
 }
 
 /* Overlay for better text readability */
@@ -105,6 +170,173 @@
     background: #007bff;
     opacity: 1;
 }
+
+
+/* About One Section Styling */
+.about-one {
+    padding: 100px 0;
+}
+
+.about-one__left {
+    position: relative;
+}
+
+.about-one__img-box {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 30px; /* Adjust the gap between images as needed */
+    position: relative;
+}
+
+.about-one__img-one {
+    flex: 1;
+    /* Make the first image smaller */
+    max-width: 70%; /* Adjust percentage as needed */
+    margin: 0 auto; /* Center the image */
+}
+
+.about-one__img-two {
+    flex: 2;
+    /* Make the second image larger */
+    max-width: 60%;
+}
+
+.about-one__img-one img,
+.about-one__img-two img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-one__big-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title__tagline {
+    font-size: 16px;
+    color: #777;
+}
+
+.section-title__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-one__text {
+    margin-bottom: 20px;
+}
+
+.about-one__points {
+    margin-bottom: 30px;
+}
+
+.about-one__points li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-one__points .icon {
+    margin-right: 10px;
+}
+
+.about-one__btn {
+    background-color: #c79d61;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.about-one__btn:hover {
+    background-color:  #c79d61;
+}
+
+/* Counter One Section Styling */
+.counter-one {
+    padding: 50px 0;
+    background-color: #333; /* Optional: Set a background color if needed */
+}
+
+.counter-one__inner {
+    text-align: center;
+}
+
+.counter-one__list {
+    display: flex;
+    justify-content: center; /* Center the list */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    padding: 0;
+    margin: 0;
+}
+
+.counter-one__single {
+    flex: 1 1 24%; /* Adjusts the width for responsive design */
+    margin: 10px;
+    background-color: #444; /* Background color for each counter item */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.counter-one__icon {
+    margin-bottom: 15px;
+    font-size: 24px; /* Adjust icon size */
+}
+
+.counter-one__content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.counter-one__text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .counter-one__single {
+        flex: 1 1 48%;
+        margin: 5px;
+    }
+}
+
+/* Map Section Styling */
+.map-section {
+    padding: 50px 0;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
 
 
 
