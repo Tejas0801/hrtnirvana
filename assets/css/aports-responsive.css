@@ -1,3 +1,34 @@
+.bhk{
+    color:#ffffff;
+}
+.counth{
+    Color:#192a47;
+    font-weight:bolder;
+    font-style:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.count-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap as needed */
+    padding: 20px;
+}
+
+.count-text {
+    font-size: 2em;
+    margin: 0;
+    color:#fff;
+}
+
+.count-container p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+
+
 
 .gallery-section {
     padding: 50px 20px;
@@ -253,7 +284,7 @@
 }
 
 .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .section-title__tagline {
@@ -268,15 +299,15 @@
 }
 
 .about-one__text {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .about-one__points {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .about-one__points li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
 }
@@ -302,12 +333,16 @@
 /* Counter One Section Styling */
 .counter-one {
     padding: 50px 0;
-    background-color: #333; /* Optional: Set a background color if needed */
+    background-image:url("assets/images/backgrounds/counterbg");
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center; /* Center the image */
 }
 
 .counter-one__inner {
     text-align: center;
 }
+
 
 .counter-one__list {
     display: flex;
@@ -320,7 +355,7 @@
 .counter-one__single {
     flex: 1 1 24%; /* Adjusts the width for responsive design */
     margin: 10px;
-    background-color: #444; /* Background color for each counter item */
+    background-image: #192a47; /* Background color for each counter item */
     padding: 20px;
     border-radius: 8px;
     color: white;
@@ -343,6 +378,7 @@
 .count-text {
     font-size: 32px;
     font-weight: bold;
+    color:#fff;
 }
 
 .counter-one__text {

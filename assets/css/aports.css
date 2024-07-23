@@ -95,7 +95,6 @@ h6 {
   color: var(--aports-black);
   margin: 0;
 }
-
 p {
   margin: 0;
 }
@@ -194,7 +193,7 @@ ul {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  border: 5px #08203;
+  border: 5px;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
   position: fixed;
@@ -2242,8 +2241,8 @@ ul {
 .about-one__points {
   position: relative;
   display: block;
-  margin-top: 32px;
-  margin-bottom: 43px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .about-one__points li {
@@ -2253,7 +2252,7 @@ ul {
 }
 
 .about-one__points li+li {
-  margin-top: 6px;
+  margin-top:1px;
 }
 
 .about-one__points li .icon {
@@ -2282,80 +2281,77 @@ ul {
 /*--------------------------------------------------------------
 # Counter One
 --------------------------------------------------------------*/
+
+
 .counter-one {
-  position: relative;
-  display: block;
-  margin-top: -144px;
-  padding: 0 0 110px;
-  z-index: 2;
+  padding: 50px 0;
+  background-size: cover; /* Ensure the image covers the entire element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center center; /* Center the image */
+  color: #fff; /* Ensure the text is visible over the background */
 }
 
 .counter-one__inner {
-  position: relative;
-  display: block;
-  background-color:#082038;
-  max-width: 870px;
-  width: 100%;
-  margin-left: auto;
-  padding: 40px 0px 0px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 .counter-one__list {
-  position: relative;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center; /* Center the list */
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  padding: 0;
+  margin: 0;
 }
 
 .counter-one__single {
-  position: relative;
-  flex: 0 0 25%;
-  max-width: 25%;
-  width: 100%;
+  flex: 1 1 24%; /* Adjusts the width for responsive design */
+  margin: 10px;
+  background-color: #082038 ;/* Semi-transparent background for each counter item */
+  padding: 20px;
+  border-radius: 8px;
   text-align: center;
-  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .counter-one__icon {
-  position: relative;
-  display: flex;
-  height: 80px;
-  width: 83px;
-  color:#ffffff;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.counter-one__icon span {
-  position: relative;
-  display: inline-block;
-  color: var(--aports-base);
-  font-size: 50px;
-  transition: all 500ms linear;
-  transition-delay: 0.1s;
-  transform: scale(1);
-}
-
-.counter-one__single:hover .counter-one__icon span {
-  transform: scale(.9);
+  margin-bottom: 15px;
+  font-size: 24px; /* Adjust icon size */
 }
 
 .counter-one__content-box {
-  position: relative;
-  display: block;
-  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.counter-one__single h3 {
-  font-size: 26px;
-  font-family: var(--aports-font);
-  line-height: 30px;
-  font-weight: 700;
+.count-text {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.counter-one .odometer-formatting-mark {
-  display: none;
+.counter-one__text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.count-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap as needed */
+  padding: 20px;
+}
+
+.count-container p {
+  margin: 0;
+  font-size: 1.5em;
 }
 
 /*--------------------------------------------------------------
