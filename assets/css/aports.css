@@ -2331,6 +2331,12 @@ ul {
   align-items: center;
 }
 
+.counterba{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .count-text {
   font-size: 32px;
   font-weight: bold;
@@ -2345,8 +2351,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Adjust the gap as needed */
-  padding: 20px;
+  gap: 0px; /* Adjust the gap as needed */
+  padding: 0px;
 }
 
 .count-container p {
